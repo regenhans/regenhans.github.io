@@ -1,0 +1,45 @@
+@import 'compass'
+@import 'compass/reset'
+@import 'compass/css3'
+//Variables
+
+$dark: #002833
+$light: #839496
+$cyan: #20d6d6
+$magenta: #d33682
+
+//fonts
+
++font-face("Monaco", font-files("fonts/Monaco.ttf"))
+
+
+
+html, body
+	height: 100%
+	font-family: "Monaco"
+	font-size: 17px
+
+
+
+body
+	background: $dark
+	+display-flex
+	align-items: center
+	justify-content: center
+	p
+		max-width: 40%
+		color: $light
+		text-align: center
+		line-height: 140%
+	span
+		color: $cyan
+	a
+		color: $magenta
+
+@media screen and(max-width:500px)
+	html, body
+		height: auto
+	body p
+		max-width: 80%
+		margin-top: 10% 
+		margin-bottom: 10% 
