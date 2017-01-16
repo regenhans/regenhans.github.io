@@ -74,7 +74,6 @@ body {
 body p {
   max-width: 40%;
   color: #839496;
-  text-align: center;
   line-height: 140%;
 }
 body span {
@@ -82,6 +81,12 @@ body span {
 }
 body a {
   color: #d33682;
+}
+body a.social {
+  color: #9cf6ba;
+}
+body a.project {
+  color: #fcffd0;
 }
 
 @media screen and (max-width: 500px) {
